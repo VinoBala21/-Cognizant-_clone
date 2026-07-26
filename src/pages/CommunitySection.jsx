@@ -6,7 +6,7 @@ const CommunitySection = () => {
   return (
     <section className="community-section-wrapper">
       <div className="community-container">
-        
+
         <div className="community-media-wrapper">
           <img
             src={communityImg}
@@ -32,17 +32,9 @@ const CommunitySection = () => {
 
           <a href="#action" className="community-cta-btn">
             <span>See our culture in action</span>
-            <svg
-              className="cta-arrow-svg"
-              width="12"
-              height="14"
-              viewBox="0 0 12 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <polygon points="1,1 11,7 1,13" />
-            </svg>
+            <span>→</span>
           </a>
+
         </div>
 
       </div>

@@ -30,14 +30,7 @@ const DriverSeatSection = () => {
           <a href="#esg" className="driverseat-cta-btn">
             <span> Explore our L&D programs</span>
             
-            <svg
-              className="cta-arrow-svg"
-              width="12"
-              height="14"
-              viewBox="0 0 10 12"
-            >
-              <polygon points="0,0 10,6 0,12" />
-            </svg>
+          <span>→</span>
           </a>
         </div>
 

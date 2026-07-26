@@ -380,7 +380,7 @@ driverseat-cta-btn {
   transition: all 0.25s ease-in-out;
 }
 
-/* HOVER STATE */
+
 driverseat-cta-btn:hover {
   background-color: #80f3f3; 
 }
