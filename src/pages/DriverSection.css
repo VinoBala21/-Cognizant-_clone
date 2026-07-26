@@ -1,0 +1,391 @@
+
+.driverseat-section-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #000048; /* Cognizant Signature Dark Navy Background */
+  padding: 90px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
+.driverseat-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+
+.driverseat-content-wrapper {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.driverseat-title {
+  color: #ffffff;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.12;
+  margin-bottom: 24px;
+  letter-spacing: -0.6px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.driverseat-description {
+  color: #ffffff; 
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 36px;
+  letter-spacing: -0.2px;
+  opacity: 0.95;
+}
+
+
+.driverseat-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #00c9c9; 
+  color: #000048;           
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.driverseat-cta-btn:hover {
+  background-color: #00b3b3;
+  transform: translateY(-1px);
+}
+
+.cta-arrow {
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-top: -2px;
+}
+
+
+.driverseat-media-wrapper {
+  position: relative;
+  flex: 1.1;
+  max-width: 620px;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.driverseat-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+.driverseat-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.driverseat-play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+  background-color: #ffffff;
+}
+
+
+.play-triangle {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 14px solid #000000;
+  margin-left: 3px;
+}
+
+
+.back-to-top-btn {
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+  background-color: rgba(255, 255, 255, 0.15); /* Slightly translucent on dark bg */
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.back-to-top-btn:hover {
+  background-color: #ffffff;
+  color: #000048;
+}
+
+.arrow-up {
+  font-size: 0.8rem;
+}
+
+
+@media (max-width: 991px) {
+  .driverseat-section-wrapper {
+    padding: 60px 20px;
+  }
+
+  .driverseat-container {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .driverseat-content-wrapper,
+  .driverseat-media-wrapper {
+    max-width: 100%;
+  }
+
+  .driverseat-title {
+    font-size: 2.3rem;
+  }
+
+  .driverseat-description {
+    font-size: 1.05rem;
+  }
+}
+.driverseat-section-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #000048; /* Cognizant Signature Dark Navy Background */
+  padding: 90px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
+.driverseat-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+
+.driverseat-content-wrapper {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.driverseat-title {
+  color: #ffffff; /* Crisp White Title */
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.12;
+  margin-bottom: 24px;
+  letter-spacing: -0.6px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.driverseat-description {
+  color: #ffffff; /* Soft Pure White Body Text */
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 36px;
+  letter-spacing: -0.2px;
+  opacity: 0.95;
+}
+
+
+.driverseat-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #00c9c9;
+  color: #000048;         
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.driverseat-cta-btn:hover {
+  background-color: #00b3b3;
+  transform: translateY(-1px);
+}
+
+.cta-arrow {
+  font-size: 1.2rem;
+  line-height: 1;
+  margin-top: -2px;
+}
+
+
+.driverseat-media-wrapper {
+  position: relative;
+  flex: 1.1;
+  max-width: 620px;
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.driverseat-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+
+.driverseat-play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.driverseat-play-btn:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+  background-color: #ffffff;
+}
+
+
+.play-triangle {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 14px solid #000000;
+  margin-left: 3px;
+}
+
+
+.back-to-top-btn {
+  position: absolute;
+  bottom: 25px;
+  right: 30px;
+  background-color: rgba(255, 255, 255, 0.15); /* Slightly translucent on dark bg */
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.back-to-top-btn:hover {
+  background-color: #ffffff;
+  color: #000048;
+}
+
+.arrow-up {
+  font-size: 0.8rem;
+}
+
+
+@media (max-width: 991px) {
+  .driverseat-section-wrapper {
+    padding: 60px 20px;
+  }
+
+  .driverseat-container {
+    flex-direction: column-reverse; /* Stack text above media */
+    gap: 40px;
+  }
+
+  .driverseat-content-wrapper,
+  .driverseat-media-wrapper {
+    max-width: 100%;
+  }
+
+  .driverseat-title {
+    font-size: 2.3rem;
+  }
+
+  .driverseat-description {
+    font-size: 1.05rem;
+  }
+}
+
+driverseat-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #00c9c9; 
+  color: #000048;       
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 14px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.cta-arrow-svg {
+  fill: transparent;
+  stroke: #000048;          
+  stroke-width: 0.5px;       
+  stroke-linejoin: round;
+  transition: all 0.25s ease-in-out;
+}
+
+/* HOVER STATE */
+driverseat-cta-btn:hover {
+  background-color: #80f3f3; 
+}
+
+driverseat-cta-btn:hover .cta-arrow-svg {
+  fill: #000048;             
+  stroke: #000048;
+}

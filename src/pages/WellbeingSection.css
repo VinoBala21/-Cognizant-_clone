@@ -1,0 +1,99 @@
+.wellbeing-section-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 100px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.wellbeing-container {
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wellbeing-title {
+  color: #000048;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 28px;
+  letter-spacing: -0.6px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.wellbeing-subtext {
+  color: #1d1d1d;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  max-width: 950px;
+  letter-spacing: -0.2px;
+}
+
+.wellbeing-description {
+  color: #2c2c2c;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.52;
+  margin-bottom: 36px;
+  max-width: 950px;
+  letter-spacing: -0.2px;
+}
+
+.wellbeing-cta-btn {
+  display: inline-block;
+  align-items: center;
+  gap: 12px;
+  background-color: #00c9c9;
+  color: #000048;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 14px 30px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+
+.wellbeing-cta-btn:hover {
+  background-color: #000080;
+}
+
+.cta-triangle-svg {
+  fill: transparent;
+  stroke: #000048;
+  stroke-width: 1.6px;
+  stroke-linejoin: round;
+  transition: all 0.25s ease-in-out;
+}
+
+.wellbeing-cta-btn:hover {
+  background-color: #80f3f3;
+}
+
+.wellbeing-cta-btn:hover .cta-triangle-svg,
+.wellbeing-cta-btn:active .cta-triangle-svg {
+  fill: #000048;
+  stroke: #000048;
+}
+
+@media (max-width: 991px) {
+  .wellbeing-section-wrapper {
+    padding: 60px 20px;
+  }
+
+  .wellbeing-title {
+    font-size: 2.2rem;
+  }
+
+  .wellbeing-subtext,
+  .wellbeing-description {
+    font-size: 1.05rem;
+  }
+}

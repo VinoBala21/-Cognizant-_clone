@@ -1,0 +1,127 @@
+
+.footer {
+  position: relative;
+  background-color: #f1f3f5;
+  padding: 60px 70px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1.3fr 1.3fr 2.2fr;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-col, .footer-col1 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.logo-box {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 2px;
+}
+
+.brand-logo {
+  height: 85px; 
+  width: auto;
+  object-fit: contain;
+}
+
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #0b1329;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+  color: #00bcd4;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 14px;
+  align-items: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b1329;
+}
+
+.social-icons a:hover {
+  color: #00bcd4;
+}
+
+
+.sub-links {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #0b1329;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sub-links a {
+  color: #0b1329;
+  text-decoration: none;
+}
+
+.sub-links a:hover {
+  text-decoration: underline;
+}
+
+
+.copy {
+  font-size: 12px;
+  color: #555e6c;
+  margin: 0;
+}
+
+
+.top-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 70px;
+  background-color: #0b1329;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-btn:hover {
+  background-color: #1a2238;
+}

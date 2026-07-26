@@ -1,0 +1,188 @@
+.journey-section-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.journey-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.journey-heading {
+  color: #000048;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.15;
+  margin-bottom: 50px;
+  max-width: 700px;
+  letter-spacing: -0.8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.journey-content-grid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.journey-accordion-list {
+  flex: 1;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  gap: 16px;
+}
+
+.accordion-title {
+  color: #2b6cb0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+  transition: color 0.2s ease;
+}
+
+.accordion-header.active .accordion-title {
+  color: #000048;
+}
+
+.accordion-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #718096;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.accordion-icon-wrapper:hover,
+.accordion-header.active .accordion-icon-wrapper {
+  border-color: #000048;
+}
+
+.accordion-icon {
+  color: #2b6cb0;
+  transition: transform 0.25s ease, color 0.2s ease;
+}
+
+.accordion-icon-wrapper:hover .accordion-icon,
+.accordion-header.active .accordion-icon {
+  color: #000048;
+}
+
+.accordion-header.active .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  padding: 4px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+.accordion-content p {
+  color: #1a202c;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  margin: 0;
+  letter-spacing: -0.2px;
+  max-width: 460px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.accordion-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #00bcd4;
+  color: #000048;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.accordion-cta-btn:hover {
+  background-color: #80f3f3;
+}
+
+.journey-image-wrapper {
+  flex: 1;
+  max-width: 500px;
+  overflow: hidden;
+}
+
+.journey-img {
+  width: 100%;
+  height: 480px;
+  display: block;
+  object-fit: cover;
+  animation: fadeInImg 0.3s ease-in-out;
+}
+
+@keyframes fadeInImg {
+  from { opacity: 0.4; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 991px) {
+  .journey-section-wrapper {
+    padding: 60px 20px;
+  }
+
+  .journey-heading {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+
+  .journey-content-grid {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .journey-accordion-list,
+  .journey-image-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .accordion-title {
+    font-size: 1.8rem;
+  }
+}
